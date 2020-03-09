@@ -7,7 +7,7 @@ Created on Tue Jan  7 00:54:51 2020
 
 from flask import Flask, render_template, request, send_file
 from modify_data import *
-from werkzeug import secure_filename
+#from werkzeug import secure_filename
 
 app=Flask(__name__)
 
