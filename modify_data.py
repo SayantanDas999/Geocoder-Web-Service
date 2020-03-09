@@ -8,7 +8,7 @@ Created on Thu Jan  9 01:19:02 2020
 import pandas
 from geopy.geocoders import ArcGIS
 
-def modify_data(file):
+def modified_data(file):
     df=pandas.read_csv(file)
     nom=ArcGIS()
     df["Address"]=df["Address"]+","+df["City"]+","+df["State"]+","+df["Country"]

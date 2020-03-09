@@ -21,7 +21,7 @@ def success():
     if request.method=='POST':
         file=request.files["file"]
         try:
-            output=modify_data(file)
+            output=modified_data(file)
             output.to_csv("modified_"+file.filename)
             return render_template("index.html", tables=[output.to_html(classes='data',header="true")], btn="download.html")
         except KeyError:
