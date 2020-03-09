@@ -1,0 +1,46 @@
+html,body{
+	height:100%;
+	margin: 0;
+}
+
+.container{
+	width:100%;
+	height:100%;
+	margin: 0;
+	color:black;
+	background-color:#2E8B57;
+	text-align:center;
+	overflow:hidden;
+}
+
+table,th,td{
+	color:#E0FFFF;
+	text-align:center;
+}
+
+.container h1{
+	font-family:Arial;
+	font-size:35px;
+	color:#B0C4DE;
+	margin-top:80px;
+}
+
+.container h4{
+	color:#E0FFFF;
+}
+
+.container input{
+	color:#E0FFFF;
+	margin-top:2px;
+}
+
+.container button{
+	width:70px;
+	height:30px;
+	background-color:#4682B4;
+}
+
+.container p{
+	color:#E0FFFF;
+	margin:20px;
+}
