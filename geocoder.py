@@ -23,7 +23,7 @@ def success():
         try:
             output=modified_data(file)
             output.to_csv("modified_"+file.filename)
-            return render_template("index.html", tables=[output.to_html(classes='data',header="true")], btn="download.html")
+            return render_template("download.html", tables=[output.to_html(classes='data',header="true")])
         except KeyError:
             return render_template("index.html",text="Your file doesn't contain a field named Address")
         except:

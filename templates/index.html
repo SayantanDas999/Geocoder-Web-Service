@@ -16,12 +16,8 @@
 				<input type='file' name='file'>
 				<button type='submit'>Submit</button>
 			</form>
-			<div class= "table">
-				{% for table in tables %}
-					{{ table |safe }}
-				{% endfor %}
-				{% include 'download.html' ignore missing %}
-			</div>
+			{%block content%}
+			{%endblock%}
 		</div>
 	</body>
 </html>

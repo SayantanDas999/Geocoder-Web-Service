@@ -1,6 +1,11 @@
-<!DOCTYPE html>
-<html>
+{% extends "index.html" %}
+{% block content %}
+	<div class= "table">
+		{% for table in tables %}
+			{{ table |safe }}
+		{% endfor %}
+	</div>
 	<div class="download">
 		<a href={{url_for('download')}}><button class="btn">Download</button></a>
 	</div>
-</html>
+{% endblock %}
